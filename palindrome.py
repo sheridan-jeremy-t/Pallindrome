@@ -13,8 +13,8 @@ def is_palindrome(text: str)-> bool:
         raise ValueError("Input must be a string")
     if not text:
         return False
-
-    text_deque = deque(text)
+    cleaned_text = text.lower().strip() #convert input text to all lower case and remove all white space
+    text_deque = deque(cleaned_text)
     while len(text_deque) > 1:
         if text_deque.popleft() != text_deque.pop():
             return False
