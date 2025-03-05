@@ -14,3 +14,5 @@ def test_is_palindrome_string():
         is_palindrome(123)
         is_palindrome(None)
         is_palindrome([])
+def test_is_palindrome_string_empty():
+    assert is_palindrome("") == False
