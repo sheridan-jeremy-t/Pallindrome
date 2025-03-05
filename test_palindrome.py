@@ -22,3 +22,4 @@ def test_is_palindrome_single_char():
     assert is_palindrome("abc") is False #commit #10 - test passed, no changes to code
     assert is_palindrome("laval") is True # commit #12 - test passed, no changes to code
     assert is_palindrome("toronto") is False #commit #14 - test passed, no changes to code
+    assert is_palindrome("Able was I ere I saw Elba") is True #commit #15 test failed
