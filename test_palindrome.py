@@ -20,4 +20,4 @@ def test_is_palindrome_single_char():
     assert is_palindrome("a") is True
     assert is_palindrome("bb") is True # commit #8 - test passed, no changes to code
     assert is_palindrome("abc") is False #commit #10 - test passed, no changes to code
-    assert is_palindrome("laval") is True
+    assert is_palindrome("laval") is True # commit #12 - test passed, no changes to code
