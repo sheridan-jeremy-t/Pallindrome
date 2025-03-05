@@ -3,11 +3,6 @@ Validates strings as palindromes.
 """
 from collections import deque
 
-def main():
-    raise NotImplemented
-if __name__ == '__main__':
-    main()
-
 def is_palindrome(text: str)-> bool:
     if not isinstance(text, str):
         raise ValueError("Input must be a string")
@@ -19,3 +14,9 @@ def is_palindrome(text: str)-> bool:
         if text_deque.popleft() != text_deque.pop():
             return False
     return True
+def main():
+    user_input = input("What would you like to check? ")
+    is_palindrome(user_input)
+
+if __name__ == '__main__':
+    main()
