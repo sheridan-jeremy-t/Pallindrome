@@ -14,10 +14,15 @@ def is_palindrome(text: str)-> bool:
         if text_deque.popleft() != text_deque.pop():
             return False
     return True
-
+def palindrome_result(text):
+    if is_palindrome(text):
+        return f"{text} is a palindrome"
+    else:
+        return f"{text} is NOT a palindrome"
 def main():
     user_input: str = input("What would you like to check? ")
-    is_palindrome(user_input)
+    confirmation = palindrome_result(user_input)
+    print(confirmation)
 
 
 if __name__ == '__main__':
