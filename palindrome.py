@@ -1,6 +1,8 @@
 """
 Validates strings as palindromes.
 """
+from collections import deque
+
 def main():
     raise NotImplemented
 if __name__ == '__main__':
